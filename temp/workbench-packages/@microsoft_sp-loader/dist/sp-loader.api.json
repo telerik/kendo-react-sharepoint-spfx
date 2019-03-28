@@ -1,0 +1,309 @@
+{
+  "kind": "package",
+  "name": "@microsoft/sp-loader",
+  "summary": [
+    {
+      "kind": "text",
+      "text": "The SharePoint Framework loader"
+    }
+  ],
+  "remarks": [
+    {
+      "kind": "text",
+      "text": "Built on familiar standards such as SystemJS and WebPack, the loader is the first part of the SharePoint Framework to load on a page. It manages versioning and loading of client-side components, web parts, and other assets. It also implements the developer dashboard."
+    }
+  ],
+  "exports": {
+    "ILoadScriptOptions": {
+      "kind": "interface",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Options for the loadScript() method in ISPComponentLoader"
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "globalExportsName": {
+          "kind": "property",
+          "signature": "globalExportsName?: string;",
+          "isOptional": true,
+          "isReadOnly": false,
+          "isStatic": false,
+          "type": "string",
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "If set, the loaded script will be stored in a global variable under this name."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isEventProperty": false
+        }
+      }
+    },
+    "SPComponentLoader": {
+      "kind": "class",
+      "extends": "",
+      "implements": "",
+      "typeParameters": [],
+      "deprecatedMessage": [],
+      "summary": [
+        {
+          "kind": "text",
+          "text": "Component loader. Needs to be initialized with an implemented "
+        },
+        {
+          "kind": "code",
+          "text": "ISPComponentLoader",
+          "highlighter": "plain"
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ],
+      "remarks": [],
+      "isBeta": false,
+      "isSealed": false,
+      "members": {
+        "getManifests": {
+          "kind": "method",
+          "signature": "static getManifests(): IClientSideComponentManifest[];",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": true,
+          "returnValue": {
+            "type": "IClientSideComponentManifest[]",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Returns static copies of all the manifests."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "loadComponent": {
+          "kind": "method",
+          "signature": "static loadComponent<TComponent>(manifest: IClientSideComponentManifest): Promise<TComponent>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": true,
+          "returnValue": {
+            "type": "Promise<TComponent>",
+            "description": [
+              {
+                "kind": "text",
+                "text": "A promise containing the loaded module."
+              }
+            ]
+          },
+          "parameters": {
+            "manifest": {
+              "name": "manifest",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "Manifest of the module to load."
+                }
+              ],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "IClientSideComponentManifest"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Loads a component from a manifest."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "loadComponentById": {
+          "kind": "method",
+          "signature": "static loadComponentById<TComponent>(id: string, version?: string): Promise<TComponent>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": true,
+          "returnValue": {
+            "type": "Promise<TComponent>",
+            "description": [
+              {
+                "kind": "text",
+                "text": "A promise containing the loaded module."
+              }
+            ]
+          },
+          "parameters": {
+            "id": {
+              "name": "id",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "The id of the component to load."
+                }
+              ],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            },
+            "version": {
+              "name": "version",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "The version of the component to load. If version is not defined, the method will load any version of the component."
+                }
+              ],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Resolve a component id and version, and load it."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "loadCss": {
+          "kind": "method",
+          "signature": "static loadCss(url: string): void;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": true,
+          "returnValue": {
+            "type": "void",
+            "description": []
+          },
+          "parameters": {
+            "url": {
+              "name": "url",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "The CSS file URL."
+                }
+              ],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Inserts a "
+            },
+            {
+              "kind": "code",
+              "text": "<link ... />",
+              "highlighter": "plain"
+            },
+            {
+              "kind": "text",
+              "text": " tag for a stylesheet."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        },
+        "loadScript": {
+          "kind": "method",
+          "signature": "static loadScript<TModule>(url: string, options?: ILoadScriptOptions): Promise<TModule>;",
+          "accessModifier": "",
+          "isOptional": false,
+          "isStatic": true,
+          "returnValue": {
+            "type": "Promise<TModule>",
+            "description": [
+              {
+                "kind": "text",
+                "text": "A promise containing the loaded module."
+              }
+            ]
+          },
+          "parameters": {
+            "url": {
+              "name": "url",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "The script URL."
+                }
+              ],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "string"
+            },
+            "options": {
+              "name": "options",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "globalExportsName: If the script isn't an AMD module and loads a global member on the page, specify the global member's name."
+                }
+              ],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "ILoadScriptOptions"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Given a URL, load a script."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "If a script with a global variable is being loaded, the global variable already exists, and the script fails to load (because of a syntax error, for example), the original global variable may be returned and an error may not be propagated."
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "isVirtual": false,
+          "isOverride": false
+        }
+      }
+    }
+  }
+}

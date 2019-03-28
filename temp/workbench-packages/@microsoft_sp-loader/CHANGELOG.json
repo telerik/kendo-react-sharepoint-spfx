@@ -1,0 +1,481 @@
+{
+  "name": "@microsoft/sp-loader",
+  "entries": [
+    {
+      "version": "1.7.1",
+      "tag": "@microsoft/sp-loader_v1.7.1",
+      "date": "Tue, 18 Dec 2018 02:02:24 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.22.15` to `~0.22.16`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.7.0",
+      "tag": "@microsoft/sp-loader_v1.7.0",
+      "date": "Thu, 08 Nov 2018 17:05:51 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Create public APIs for getManifests and loadComponentById"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.22.12` to `~0.22.13`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.6.0",
+      "tag": "@microsoft/sp-loader_v1.6.0",
+      "date": "Mon, 27 Aug 2018 18:06:28 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.21.7` to `~0.21.8`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.5.1",
+      "tag": "@microsoft/sp-loader_v1.5.1",
+      "date": "Tue, 26 Jun 2018 14:50:55 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.16.15` to `~0.16.16`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.5.0",
+      "tag": "@microsoft/sp-loader_v1.5.0",
+      "date": "Fri, 01 Jun 2018 18:13:37 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Fix the way react and react-dom are loaded in the workbench."
+          },
+          {
+            "comment": "Remove Ctrl+Shift+` key combo to open the developer tools."
+          },
+          {
+            "comment": "Block usage of SPFx to Firefox 43 or older due to unsupported APIs"
+          },
+          {
+            "comment": "Fix a problem when error page doesn't include correlation id"
+          },
+          {
+            "comment": "Increase RequireJS timeout to 30 seconds"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.16.12` to `~0.16.13`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.4.1",
+      "tag": "@microsoft/sp-loader_v1.4.1",
+      "date": "Thu, 15 Feb 2018 01:56:14 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "Package version bump from 1.4.1-pr.2 to 1.4.1 by version policy"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Dependency @microsoft/office-ui-fabric-react-bundle version bump from 1.4.1-pr.2 to 1.4.1."
+          },
+          {
+            "comment": "Dependency @microsoft/sp-core-library version bump from 1.4.1-pr.2 to 1.4.1."
+          },
+          {
+            "comment": "Dependency @microsoft/sp-lodash-subset version bump from 1.4.1-pr.2 to 1.4.1."
+          },
+          {
+            "comment": "Dependency @microsoft/sp-module-interfaces version bump from 1.4.1-pr.2 to 1.4.1."
+          },
+          {
+            "comment": "Dependency @microsoft/sp-odata-types version bump from 1.4.1-pr.2 to 1.4.1."
+          },
+          {
+            "comment": "Dependency @microsoft/sp-polyfills version bump from 1.4.1-pr.2 to 1.4.1."
+          },
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.9.5` to `~0.9.6`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.4.0",
+      "tag": "@microsoft/sp-loader_v1.4.0",
+      "date": "Mon, 04 Dec 2017 18:15:58 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Disallow loading of components built using SPFx preview releases prior to 1.0"
+          },
+          {
+            "comment": "Replace @types/es6-collections with the typescript compiler's built-in es2015.collection library"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.3.4",
+      "tag": "@microsoft/sp-loader_v1.3.4",
+      "date": "Thu, 26 Oct 2017 17:35:39 GMT",
+      "comments": {}
+    },
+    {
+      "version": "1.3.0",
+      "tag": "@microsoft/sp-loader_v1.3.0",
+      "date": "Fri, 22 Sep 2017 20:19:09 GMT",
+      "comments": {}
+    },
+    {
+      "version": "1.2.0",
+      "tag": "@microsoft/sp-loader_v1.2.0",
+      "date": "Fri, 25 Aug 2017 20:31:17 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Use lockstep version for all SPFx packages"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Ensure styles are loaded in a debounced manner"
+          },
+          {
+            "comment": "Fix the background color of the debug warning dialog"
+          },
+          {
+            "comment": "Decode the debug querystring when needed"
+          },
+          {
+            "comment": "Add a self-xss warning in the console"
+          },
+          {
+            "comment": "Update to Fabric React 4.32.0"
+          },
+          {
+            "comment": "Change the wording of some strings in the \"Allow debug manifests?\" dialog box"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.1",
+      "tag": "@microsoft/sp-loader_v1.1.1",
+      "date": "Thu, 08 Jun 2017 19:39:03 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@microsoft/sp-odata-types\" from `~1.0.1` to `~1.1.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.1.0",
+      "tag": "@microsoft/sp-loader_v1.1.0",
+      "date": "Thu, 25 May 2017 21:09:42 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Upgraded office-ui-fabric-react to 2.31.0"
+          },
+          {
+            "comment": "Added self-XSS warning message to the browser developer console"
+          },
+          {
+            "comment": "Fixed an issue where filter overlays weren't being shown in the developer dashboard trace display"
+          },
+          {
+            "comment": "Improved the debug manifests security confirmation dialog"
+          },
+          {
+            "comment": "Improved the debug manifest error user interface"
+          },
+          {
+            "comment": "Enabled the \"debugManifestsFile\" parameter to be specified in the query string instead of the URL fragment"
+          },
+          {
+            "comment": "Improved the order of tabs in the Developer Dashboard"
+          },
+          {
+            "comment": "Fixed an issue with the formatting of dates and times in the \"Trace\" tab of the Developer Dashboard"
+          },
+          {
+            "comment": "Fixed an issue where the Developer Dashboard logged an error involving React"
+          },
+          {
+            "comment": "Upgraded to Webpack 2.0"
+          },
+          {
+            "comment": "Improved user experience when web parts fail to render"
+          },
+          {
+            "comment": "Added detection of undeclared dependencies at runtime"
+          },
+          {
+            "comment": "Added experimental support for loading modules using RequireJS instead of SystemJS"
+          },
+          {
+            "comment": "Updated loadScript() to use XHR instead of <script> tags"
+          },
+          {
+            "comment": "Removed support for Internet Explorer releases older than IE9"
+          },
+          {
+            "comment": "Fixed an issue with loadComponentById() where it sometimes didn't accept valid GUID's"
+          },
+          {
+            "comment": "Upgraded SystemJS to 0.19.25"
+          },
+          {
+            "comment": "Fixed an issue where the Chrome debugger wasn't showing source code for client-side components"
+          },
+          {
+            "comment": "Changed the Developer Dashboard shortcut from CTRL+SHIFT+` to CTRL+F12"
+          },
+          {
+            "comment": "Upgraded to TypeScript 2.2"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@microsoft/sp-lodash-subset\" from `~1.0.0` to `~1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-module-interfaces\" from `~1.0.0` to `~1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-core-library\" from `~1.0.0` to `~1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-odata-types\" from `~1.0.0` to `~1.0.1`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-polyfills\" from `~1.0.0` to `~1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/office-ui-fabric-react-bundle\" from `~1.0.1` to `~1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@ms/odsp-utilities-bundle\" from `~1.0.2` to `~1.1.0`"
+          },
+          {
+            "comment": "Updating dependency \"@ms/sp-build-internal-web\" from `~0.5.3` to `~0.6.0`"
+          },
+          {
+            "comment": "Updating dependency \"@ms/sp-telemetry\" from `~0.2.1` to `~0.2.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.0",
+      "tag": "@microsoft/sp-loader_v1.0.0",
+      "date": "Fri, 17 Feb 2017 23:09:23 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fixed the way react-dom and react are referenced in tests against the NPM module."
+          },
+          {
+            "comment": "Ensured two copies of core libraries don't get loaded on the workbench."
+          },
+          {
+            "comment": "loadComponent() has a retry strategy when it fails to load"
+          },
+          {
+            "comment": "Upgraded React to 15.4.1"
+          },
+          {
+            "comment": "Bumped up office-ui-fabric-react version to 0.83.0"
+          },
+          {
+            "comment": "Added alias to manifest dev console"
+          },
+          {
+            "comment": "Support global dependencies in path loader configurations"
+          },
+          {
+            "comment": "Old versions of Firefox (<44) are not supported"
+          },
+          {
+            "comment": "Calling loadScript with a string as the second parameter should throw an error"
+          },
+          {
+            "comment": "Requests for React 0.14.8 return React 15.4.2"
+          },
+          {
+            "comment": "Locked version numbers for @types packages"
+          },
+          {
+            "comment": "Updated .npmignore"
+          },
+          {
+            "comment": "Added query parameter (enableConsoleLog) to enable TraceLogger logging to console\""
+          },
+          {
+            "comment": "Added tryGetManifest() function to ManifestStore and tryGetComponentById() function to ComponentStore."
+          },
+          {
+            "comment": "IE 9 is not supported anymore."
+          },
+          {
+            "comment": "Chrome developer tools now shows source code correctly"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Support for multiple component versions simultaneously"
+          },
+          {
+            "comment": "Updated to TypeScript 2.1"
+          },
+          {
+            "comment": "Enabled strictNullChecks in sp-loader project."
+          },
+          {
+            "comment": "Switched back to SystemJS 0.19.25"
+          }
+        ],
+        "major": [
+          {
+            "comment": "General availability"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.7.0",
+      "tag": "@microsoft/sp-loader_v0.7.0",
+      "date": "Tue, 03 Jan 2017 21:52:49 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "More changes for RC0 release."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@microsoft/sp-lodash-subset\" from `~0.6.0` to `~0.6.1`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-module-interfaces\" from `~0.6.0` to `~0.7.0`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-core-library\" from `~0.1.1` to `~0.1.2`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-odata-types\" from `~0.2.0` to `~0.2.1`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-polyfills\" from `~0.1.0` to `~0.1.1`"
+          },
+          {
+            "comment": "Updating dependency \"@microsoft/sp-telemetry\" from `~0.1.0` to `~0.2.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.6.0",
+      "tag": "@microsoft/sp-loader_v0.6.0",
+      "date": "Tue, 06 Dec 2016 20:44:26 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Renaming sp-module-loader to sp-loader."
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@microsoft/sp-module-interfaces\" from `~0.5.1` to `~0.6.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.5.1",
+      "tag": "@microsoft/sp-loader_v0.5.1",
+      "comments": {
+        "minor": [
+          {
+            "comment": "API clean up. 'forceLoadDebugManifests' and 'loadManifestModules' are deprecated."
+          },
+          {
+            "comment": "Localizing the strings in the module loader."
+          },
+          {
+            "comment": "Updating the developer tools to use office-ui-fabric-react."
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Cleaning up dependencies."
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.4.0",
+      "tag": "@microsoft/sp-loader_v0.4.0",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Adds a field to WebPart manifest for disabling the WebPart on a Classic page"
+          },
+          {
+            "comment": "IClientSideWebPartManifestInstance doesn't extend IClientSideWebPartManifestEntry anymore"
+          },
+          {
+            "comment": "For manifests, the `id` field should be a GUID"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "Updates standard library modules list to include `@microsoft/sp-webpart-base`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.3.0",
+      "tag": "@microsoft/sp-loader_v0.3.0",
+      "comments": {}
+    },
+    {
+      "version": "0.2.0",
+      "tag": "@microsoft/sp-loader_v0.2.0",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Minor bump of `@microsoft/sp-client-preview`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.11",
+      "tag": "@microsoft/sp-loader_v0.1.11",
+      "comments": {}
+    }
+  ]
+}
